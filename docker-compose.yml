@@ -1,0 +1,14 @@
+services:
+  my-gotty:
+    hostname: lapio
+    ports:
+      - "8989:8080"
+    image: lapio-plays:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - TTYD_USER=admin
+      - TTYD_PASS=admin123
+    tty: true
+    stdin_open: true
