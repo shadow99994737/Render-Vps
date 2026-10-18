@@ -8,7 +8,7 @@ services:
       context: .
       dockerfile: Dockerfile
     environment:
-      - TTYD_USER=admin
-      - TTYD_PASS=admin123
+      - TTYD_USER=root
+      - TTYD_PASS=root
     tty: true
     stdin_open: true
